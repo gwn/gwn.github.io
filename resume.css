@@ -1,0 +1,25 @@
+body {
+    line-height: 1.5em;
+    font-family: sans-serif;
+    width: 600px;
+    margin: 2rem auto;
+}
+a, a:link, a:visited {
+    text-decoration: none;
+    color: blue;
+    border-bottom: 1px dotted blue;
+}
+sup {
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+#photo {
+    float: right;
+}
+.footnotes {
+    border-top: 1px dotted gray;
+    padding-top: 1em;
+    font-size: 0.8em;
+    line-height: 1.2em;
+}

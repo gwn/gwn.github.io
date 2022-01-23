@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>go ask alice</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="shortcut icon" href="./hole.ico" />
+
+  <style type="text/css">
+    body {
+      background: url(./mandelbrot-1.jpg) no-repeat center center fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+      padding-top: 100px;
+      text-align: center;
+    }
+    #karpuz, #karpuz:link, #karpuz:visited {
+      display: block;
+      margin: auto;
+      width: 120px;
+      text-decoration: none;
+    }
+    #karpuz img {
+      width: 120px;
+    }
+    p {
+      font: 12px monospace;
+      background-color: rgba(0, 0, 0, .5);
+      color: white;
+      padding: 2px 0;
+      margin: 0;
+    }
+    @media only screen and (max-width: 480px) {
+        #karpuz, #karpuz img { width: 80px; }
+        p { font-size: 8px; }
+    }
+  </style>
+
+</head>
+
+<body>
+  <a id="karpuz" href="gopher://gwn.wtf">
+    <img src="./gopher.jpg" />
+    <p>oh dear.. the web sucks! follow me!</p>
+  </a>
+
+  <script type="text/javascript">
+    document.body.style.backgroundImage =
+      "url(./mandelbrot-" + Math.ceil(Math.random() * 6) + ".jpg)"
+
+    var el = document.getElementById('karpuz')
+    el.style.display = 'none'
+
+    window.addEventListener('load', function() {
+      el.style.display = 'block'
+      el.style.position = 'absolute'
+      el.style.left = Math.floor(Math.random() * (window.innerWidth - el.offsetWidth)) + 'px'
+      el.style.top = Math.floor(Math.random() * (window.innerHeight - el.offsetHeight)) + 'px'
+    })
+  </script>
+</body>
+</html>
