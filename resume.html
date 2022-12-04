@@ -1,502 +1,443 @@
 <html>
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-        body {font: 15px/24px sans-serif;}
-    </style>
+<style>
+    body {
+        font: 15px/24px sans-serif;
+        max-width: 35em;
+    }
+    a:link, a:visited {
+        color: green;
+    }
+    ul {
+        padding-left: 20px;
+        margin: 0;
+    }
+    @media (min-width: 640px) {
+        body {margin: 1em;}
+    }
+</style>
 </head>
 <body>
 
-<pre>
-dev@gwn.wtf  
-1BEA 3B99 A160 20C3 571F  5ABB 4865 13F4 6C66 EF31  
-technohipster42 @twitter  
-gwn7 @hn  
-gwn @lobsters  
-gwn @github  
+<p><a href="mailto:dev@gwn.wtf">dev@gwn.wtf</a><br/>
+gwn7 @hn<br/>
+gwn @lobsters<br/>
+gwn @github<br/>
+gwn @angellist<br/>
+1BEA 3B99 A160 20C3 571F  5ABB 4865 13F4 6C66 EF31
+</p>
 
+<h2 id="toc">toc</h2>
 
-## toc
-- sum
-- xp
-- stack
-- trivia
+<ul>
+<li><a href="#sum">sum</a></li>
+<li><a href="#xp">xp</a></li>
+<li><a href="#stack">stack</a></li>
+<li><a href="#trivia">trivia</a></li>
+</ul>
 
+<h2 id="sum">sum</h2>
 
-## sum
+<p>Hacker, full stack developer, product engineer, with 15+ years of
+professional experience and an academic background of philosophy.</p>
 
-Hacker, full stack developer, product engineer, with 15+ years of
-professional experience and an academic background of philosophy.
+<ul>
+<li>Developing full stack web &#38; mobile apps</li>
+<li>Building on top of Node, React, React Native, Postgres</li>
+<li>Working with data using classic UNIX tools and Python</li>
+<li>Administering Debian &#47; CentOS Linux (and derivatives)</li>
+<li>Scaling with AWS, Google Cloud, Heroku, or custom means</li>
+<li>Implementing real time comms features with WebRTC</li>
+<li>Building dApps on top of Ethereum &#38; Cosmos blockchains</li>
+</ul>
 
-- Developing full stack web &amp; mobile apps
-- Building on top of Node, React, React Native, Postgres
-- Working with data using classic UNIX tools and Python
-- Administering Debian / CentOS Linux (and derivatives)
-- Scaling with AWS, Google Cloud, Heroku, or custom means
-- Implementing real time comms features with WebRTC
-- Building dApps on top of Ethereum &amp; Cosmos blockchains
-
-My specialty is to build simple systems with few moving parts that
+<p>My specialty is building simple systems with few moving parts that
 contain as little accidental complexity as possible. I find this
-to be a requirement for success in today's crazy tech ecosystem. I
-don't easily buy the hype nor subscribe to every new shiny tool &amp;
-paradigm. Check out below the "xp" section for my professional
-background, "stack" section for information on my default
-technology choices, and "trivia" section for more detailed &amp; less
-formal information about myself.
-
-
-## xp
-
-Projects listed below are initially completely developed by me,
-then handed off to teams I helped build; unless otherwise noted.
-
-I'm not listing incomplete and private projects so the items below
-are not my only product experience.
-
-- [Curve Labs][curve], 2021, blockchain, Berlin
-
-  - Company: Architecting cybernetic solutions for the distributed economy
-
-  - Project: Web client for the API3 DAO. Please check out API3 at
-    https://api3.org and the open source project at
-    https://github.com/api3dao/api3-web-client.
-
-  - Tech: Javascript, React, Ethers
-
-[curve]: https://curvelabs.eu
-
-
-- [ixo][ixo], 2020-2021, blockchain, Vaduz
-
-  - Company: An Internet for sensing and verifying changes in the state of the
-    world
-
-  - Project: Client SDK and mobile client for the ixo project. Check out the
-    open source projects at https://github.com/ixofoundation/ixo-client-sdk and
-    https://github.com/gwn/ixo-app
-
-  - Tech: Javascript, React Native, Cosmos
-
-[ixo]: https://ixo.world
-
-
-- [BiLira][0], 2019-2020, fintech, Istanbul
-
-  - Company: BiLira is Turkey's first TRY backed stable
-    cryptocurrency built on the Ethereum network; issued and
-    managed by the BiLira organization.
-
-  - Project: A protected dashboard for BiLira buyers &amp; sellers,
-    KYC verification, issuance &amp; redemption &amp; swapping of
-    BiLira, wallet to wallet transactions, integration with 3rd
-    party wallet provider services, global exchanges, payment
-    systems, and other tools in the decentralized finance ecosystem.
-
-  - Tech: Javascript, React, React Native, Node, Fastify,
-    Postgres, Ethereum, Hydra OAuth2 Server
-
-[0]: https://bilira.co/en-us/home
-
-
-- [Apres][1], 2018, automation, San Francisco
-
-  - Company: Apres is an API for human automation, an on-demand
-    workforce anyone can program. The software integrates an
-    on-demand, virtual workforce to complete structured tasks,
-    managed for quality.
-
-  - Project: Protected customer &amp; worker dashboards enabling
-    the ordering &amp; implementation of tasks such as data
-    enrichment/annotation, OCR transcription, categorization,
-    comparison, and data collection.
-
-  - Tech: Javascript, React
-
-  - Notes: I was the frontend lead on this one, and a separate
-    backend team was already available.
-
-[1]: https://apres.io
-
-
-- [Uservision][2], 2018, user experience research, Istanbul
-
-  - Company: Uservision provides remote crowdsourced UX testing
-    and market research solutions for organizations with digital
-    business operations. The company provides marketers,
-    developers, product managers, and UX designers on-demand
-    access to people in their target audience which are utilised
-    to provide qualitative and quantitative intelligence.
-
-  - Project: Protected researcher &amp; marketer dashboards
-    featuring remote focus groups, UX testing, ad testing.
-
-  - Tech: Javascript, Node, React, Postgres, WebRTC
-
-[2]: http://user.vision
-
-
-- [Keynumbers][3], 2017, knowledge management, Sydney
-
-  - Company: Keynumbers is a web application that serves as
-    graph powered knowledge curation and decision making tool.
-
-  - Project: A small dashboard backed by the Neo4J graph database
-    that allowed its users to build small pipelines and make
-    arbitrary arithmetic between different datasets to reach
-    insights, in an easy to use drag and drop interface. A bit
-    hard to explain just with words, really. One of the more
-    interesting and enjoyable projects in my career.
-
-  - Tech: Javascript, Vue, Neo4J
-
-[3]: https://keynumbers.com
-
-
-- [Lord of the Feeds][4], 2016, automation, Istanbul
-
-  - Company: I developed LOTF while I was working as an employee
-    in the travel marketing science company
-    [Adphorus](https://adphorus.com).
-
-  - Project: A generic feed transformer app that enables its users
-    to collect feeds from different sources, build pipelines to
-    transform them according to predefined rules and save the
-    results in target locations.
-
-    Features are transformations between different feed formats
-    (CSV / TSV, XML), row &amp; field mapping / reducing / filtering,
-    duplicate removal, and automatic image transformation (if the
-    field contains an image URL).
-
-  - Tech: Python, Postgres, Redis, Celery, AWS Lambda, Javascript, Vue
-
-  - Notes: I heard this is still (as of 2019) in heavy use at
-    Adphorus and [Sojern][5] which acquired Adphorus in 2017.
-
-[4]: https://adphorus.com
-[5]: https://www.sojern.com
-
-
-- Adsuit, 2015, digital marketing, Istanbul
-
-  - Company: Adsuit was a digital marketing platform that ran on
-    top of the App Nexus platform.
-
-  - Project: Protected publisher &amp; advertiser dashboards with
-    interfaces for campaign creation, campaign administration, and
-    placements.
-
-  - Tech:  PHP, Laravel, Javascript, Angular, Mysql, App Nexus API
-
-
-- [Real time e-commerce dashboard][6], 2014, business intelligence, Istanbul
-
-  - Company: I built this while I was an employee for SEM, one
-    of the biggest digital marketing agencies in Turkey.
-
-  - Project: A protected dashboard for retail executives that
-    visualizes sales real time with fancy animations, and allows
-    for time &amp; category based filtering &amp; grouping.
-
-  - Tech: Python, Javascript, D3, Postgres, Google Analytics &amp;
-    Adwords APIs
-
-[6]: https://semtr.com/en
-
-
-- [Aloha Turkey Online Platform][7], 2012, online education, Istanbul
-
-  - Company: Aloha Turkey is the Turkey branch of the Aloha
-    network, which develops mental arithmetic and brain
-    development programs.
-
-  - Project: Protected dashboards for students &amp; teachers that
-    featured interfaces for lessons, examples, grades, and
-    messaging.
-
-  - Tech: PHP 5, Symfony, Javascript, jQuery
-
-[7]: https://alohama.com
-
-
-- [4C Music][8], 2009, e-commerce, Istanbul
-
-  - Company: 4C Music is a wholesale and retail supplier for
-    musical instruments and accessories, focused on guitars. They
-    were the official distributor of Fender, Ibanez and Cort
-    guitars in Turkey at the time.
-
-  - Project: A complete custom-made e-commerce system
-
-  - Tech: PHP 5, Javascript, MySQL, SQL Server
-
-[8]: http://4cmusic.com
-
-
-## stack
-
-### philosophy
-
-                   Boring
-                     .
-                   x .
-                     .
-    Mainstream . . . . . . . Eccentric
-                     .
-                     .
-                     .
-                   Hyped
-
-My technical decision making principles:
-
-- Stick with the mainstream &amp; boring unless a competing
-  alternative that is so much simpler and/or more powerful, and
-  that has an acceptable learning curve, so that it will justify
-  leaving the flock, exists.
-
-- Stay away from tech that is overkill for current needs and
-  always favor the simplest solution available that does the job.
-
-- Favor solutions that the average Javascript developer can
-  quickly understand, easily pick up and extend. Never bet on
-  solutions with very steep learning curves no matter how elegant
-  they may be. (Best example is advanced functional programming,
-  which is the biggest and the most attractive trap in Javascript)
-
-
-### what you will get
-
-Below are listed the tools that are part of my current stack,
+to be a requirement for success in today&#8217;s crazy tech ecosystem. I
+don&#8217;t easily buy the hype nor subscribe to every new shiny tool &#38;
+paradigm. Check out below the &#8220;xp&#8221; section for my professional
+background, &#8220;stack&#8221; section for information on my default
+technology choices, and &#8220;trivia&#8221; section for more detailed &#38; less
+formal information about myself.</p>
+
+<h2 id="xp">xp</h2>
+
+<p>Projects listed below are initially completely developed by me,
+then handed off to teams I helped build; unless otherwise noted.</p>
+
+<p>I&#8217;m not listing incomplete and private projects so the items below
+are not my only product experience.</p>
+
+<ul>
+<li><a href="https://curvelabs.eu">Curve Labs</a>, 2021, blockchain, Berlin
+
+<ul>
+<li><p>Company: Architecting cybernetic solutions for the distributed
+economy</p></li>
+<li><p>Project: Web client for the API3 DAO. Please check out API3 at
+<a href="https://api3.org">https:&#47;&#47;api3.org</a> and the open source project at
+<a href="https://github.com/api3dao/api3-web-client">https:&#47;&#47;github.com&#47;api3dao&#47;api3-web-client</a>.</p></li>
+<li><p>Tech: Javascript, React, Ethers</p></li>
+</ul></li>
+<li><p><a href="https://ixo.world">ixo</a>, 2020-2021, blockchain, Vaduz</p>
+
+<ul>
+<li><p>Company: An Internet for sensing and verifying changes in the
+state of the world</p></li>
+<li><p>Project: Client SDK and mobile client for the ixo project.
+Check out the open source projects at
+<a href="https://github.com/ixofoundation/ixo-client-sdk">https:&#47;&#47;github.com&#47;ixofoundation&#47;ixo-client-sdk</a> and
+<a href="https://github.com/gwn/ixo-app">https:&#47;&#47;github.com&#47;gwn&#47;ixo-app</a></p></li>
+<li><p>Tech: Javascript, React Native, Cosmos</p></li>
+</ul></li>
+<li><p><a href="https://bilira.co/en-us/home">BiLira</a>, 2019-2020, fintech, Istanbul</p>
+
+<ul>
+<li><p>Company: BiLira is Turkey&#8217;s first TRY backed stable
+cryptocurrency built on the Ethereum network; issued and
+managed by the BiLira organization.</p></li>
+<li><p>Project: A protected dashboard for BiLira buyers &#38; sellers,
+KYC verification, issuance &#38; redemption &#38; swapping of
+BiLira, wallet to wallet transactions, integration with 3rd
+party wallet provider services, global exchanges, payment
+systems, and other tools in the decentralized finance ecosystem.</p></li>
+<li><p>Tech: Javascript, React, React Native, Node, Fastify,
+Postgres, Ethereum, Hydra OAuth2 Server</p></li>
+</ul></li>
+<li><p><a href="https://apres.io">Apres</a>, 2018, automation, San Francisco</p>
+
+<ul>
+<li><p>Company: Apres is an API for human automation, an on-demand
+workforce anyone can program. The software integrates an
+on-demand, virtual workforce to complete structured tasks,
+managed for quality.</p></li>
+<li><p>Project: Protected customer &#38; worker dashboards enabling
+the ordering &#38; implementation of tasks such as data
+enrichment&#47;annotation, OCR transcription, categorization,
+comparison, and data collection.</p></li>
+<li><p>Tech: Javascript, React</p></li>
+<li><p>Notes: I was the frontend lead on this one, and a separate
+backend team was already available.</p></li>
+</ul></li>
+<li><p><a href="http://user.vision">Uservision</a>, 2018, user experience research, Istanbul</p>
+
+<ul>
+<li><p>Company: Uservision provides remote crowdsourced UX testing
+and market research solutions for organizations with digital
+business operations. The company provides marketers,
+developers, product managers, and UX designers on-demand
+access to people in their target audience which are utilised
+to provide qualitative and quantitative intelligence.</p></li>
+<li><p>Project: Protected researcher &#38; marketer dashboards
+featuring remote focus groups, UX testing, ad testing.</p></li>
+<li><p>Tech: Javascript, Node, React, Postgres, WebRTC</p></li>
+</ul></li>
+<li><p><a href="https://keynumbers.com">Keynumbers</a>, 2017, knowledge management, Sydney</p>
+
+<ul>
+<li><p>Company: Keynumbers is a web application that serves as
+graph powered knowledge curation and decision making tool.</p></li>
+<li><p>Project: A small dashboard backed by the Neo4J graph database
+that allowed its users to build small pipelines and make
+arbitrary arithmetic between different datasets to reach
+insights, in an easy to use drag and drop interface. A bit
+hard to explain just with words, really. One of the more
+interesting and enjoyable projects in my career.</p></li>
+<li><p>Tech: Javascript, Vue, Neo4J</p></li>
+</ul></li>
+<li><p><a href="https://adphorus.com">Lord of the Feeds</a>, 2016, automation, Istanbul</p>
+
+<ul>
+<li><p>Company: I developed LOTF while I was working as an employee
+in the travel marketing science company
+<a href="https://adphorus.com">Adphorus</a>.</p></li>
+<li><p>Project: A generic feed transformer app that enables its users
+to collect feeds from different sources, build pipelines to
+transform them according to predefined rules and save the
+results in target locations.</p></li>
+</ul>
+
+<p>Features are transformations between different feed formats
+(CSV &#47; TSV, XML), row &#38; field mapping &#47; reducing &#47; filtering,
+duplicate removal, and automatic image transformation (if the
+field contains an image URL).</p>
+
+<ul>
+<li><p>Tech: Python, Postgres, Redis, Celery, AWS Lambda, Javascript, Vue</p></li>
+<li><p>Notes: I heard this is still (as of 2019) in heavy use at
+Adphorus and <a href="https://www.sojern.com">Sojern</a> which acquired Adphorus in 2017.</p></li>
+</ul></li>
+<li><p>Adsuit, 2015, digital marketing, Istanbul</p>
+
+<ul>
+<li><p>Company: Adsuit was a digital marketing platform that ran on
+top of the App Nexus platform.</p></li>
+<li><p>Project: Protected publisher &#38; advertiser dashboards with
+interfaces for campaign creation, campaign administration, and
+placements.</p></li>
+<li><p>Tech:  PHP, Laravel, Javascript, Angular, Mysql, App Nexus API</p></li>
+</ul></li>
+<li><p><a href="https://semtr.com/en">Real time e-commerce dashboard</a>, 2014, business intelligence, Istanbul</p>
+
+<ul>
+<li><p>Company: I built this while I was an employee for SEM, one
+of the biggest digital marketing agencies in Turkey.</p></li>
+<li><p>Project: A protected dashboard for retail executives that
+visualizes sales real time with fancy animations, and allows
+for time &#38; category based filtering &#38; grouping.</p></li>
+<li><p>Tech: Python, Javascript, D3, Postgres, Google Analytics &#38;
+Adwords APIs</p></li>
+</ul></li>
+<li><p><a href="https://alohama.com">Aloha Turkey Online Platform</a>, 2012, online education, Istanbul</p>
+
+<ul>
+<li><p>Company: Aloha Turkey is the Turkey branch of the Aloha
+network, which develops mental arithmetic and brain
+development programs.</p></li>
+<li><p>Project: Protected dashboards for students &#38; teachers that
+featured interfaces for lessons, examples, grades, and
+messaging.</p></li>
+<li><p>Tech: PHP 5, Symfony, Javascript, jQuery</p></li>
+</ul></li>
+<li><p><a href="http://4cmusic.com">4C Music</a>, 2009, e-commerce, Istanbul</p>
+
+<ul>
+<li><p>Company: 4C Music is a wholesale and retail supplier for
+musical instruments and accessories, focused on guitars. They
+were the official distributor of Fender, Ibanez and Cort
+guitars in Turkey at the time.</p></li>
+<li><p>Project: A complete custom-made e-commerce system</p></li>
+<li><p>Tech: PHP 5, Javascript, MySQL, SQL Server</p></li>
+</ul></li>
+</ul>
+
+<h2 id="stack">stack</h2>
+
+<h3 id="philosophy">philosophy</h3>
+
+<pre><code>               Boring
+                 .
+               x .
+                 .
+Mainstream . . . . . . . Eccentric
+                 .
+                 .
+                 .
+               Hyped
+</code></pre>
+
+<p>My technical decision making principles:</p>
+
+<ul>
+<li><p>Stick with the mainstream &#38; boring unless a competing
+alternative that is so much simpler and&#47;or more powerful, and
+that has an acceptable learning curve, so that it will justify
+leaving the flock, exists.</p></li>
+<li><p>Stay away from tech that is overkill for current needs and
+always favor the simplest solution available that does the job.</p></li>
+<li><p>Favor solutions that the average Javascript developer can
+quickly understand, easily pick up and extend. Never bet on
+solutions with very steep learning curves no matter how elegant
+they may be. (Best example is advanced functional programming,
+which is the biggest and the most attractive trap in Javascript)</p></li>
+</ul>
+
+<h3 id="what-you-will-get">what you will get</h3>
+
+<p>Below are listed the tools that are part of my current stack,
 along with a paragraph that shortly explains the reasons they were
-chosen for.
-
-A project's stack is always tailored according to its specific
-needs, but below are my default choices.
-
-
-#### backend
-
-- DB: [Postgres][9]
-
-    Postgres is the best general purpose open source database
-    available in the market. Being an ACID RDBMS, it natively
-    guarantees data integrity (which is usually very important) as
-    opposed to NoSQL options such as MongoDB (which is an
-    overly-hyped alternative that is unfit to be a primary
-    database for most serious projects; mostly made popular by
-    people who don't have time or motivation to learn RDBMSs.)
-
-    Good use of modern SQL on top of a fully featured database
-    like Postgres can simplify many complex problems that
-    traditionally required backend devs to write lines and lines
-    of ugly code in the application layer.
-
-    I love Postgres from its command line client to its rich data
-    types, to its foreign data wrappers. A really a good and
-    reliable piece of tech.
-
-[9]: https://postgresql.org
-
-
-- DB Migrations: [Postgrator][10] + [Migra][11]
-
-    Migrations are a pain in the ass and everybody knows that.
-    MongoDB owes its popularity to this fact.
-
-    But if you want a reliable system migrations are a necessary
-    evil.
-
-    But actually what's evil is not the migrations. Migrations is
-    a solution to an inherently complex problem and it's fine.
-
-    What's evil is the tooling, mostly. Most migration tools add
-    unnecessary additional complexity to this already inherently
-    complex problem.
-
-    In my opinion; the combination of a database schema diff tool
-    with a raw SQL migration manager is the most elegant solution
-    to the database migration problem. This database diffing
-    approach is sometimes called "state driven database delivery"
-    and works great.
-
-[10]: https://github.com/rickbergfalk/postgrator
-[11]: https://github.com/djrobstep/migra
-
-
-- Data Access &amp; Manipulation: [Massive][12]
-
-    Massive is a library for talking to Postgres databases that
-    offers an experience comparable to the one that ORMs offer;
-    without having their many downsides (Just ask any backend dev
-    about ORMs). It's both simple, performant and easy of use;
-    which is a combination very hard to find in the database
-    library space. Just lovely.
-
-    https://youtu.be/wgoPa5Kn0n0
-
-[12]: https://massivejs.org
-
-
-- API Framework: [Fastify][13]
-
-    Fastify is one of the fastest and modern frameworks for
-    creating mostly REST style APIs. The project is well designed
-    and small, yet offers many of the important features an API
-    developer would need.
-
-[13]: https://fastify.io
-
-
-#### frontend
-
-- Framework: [React][14]
-
-    Well, React is great and you know that. The fact that the
-    React ecosystem, most of the React developers, and the
-    direction the React team is going to is shitty doesn't change
-    that. A React app flourishes under talented &amp; experienced
-    hands that that understands simplicity and don't buy the hype.
-
-[14]: https://reactjs.org
-
-
-- Routing: [Router5][17] and [Navigation][18]
-
-    Router5 is a framework agnostic router (means that it can be
-    used in non-React projects as well) that gets everything right
-    about routing. It is so much better designed and more useful
-    (especially in non-trivial scenarios) than the standard go to
-    option React Router.
-
-    The Navigation router is a fine router for React Native.
-    Although it is not mainstream and its API has considerable
-    room for improvement; the features it offer are great compared
-    to its competitors React Navigation and React Native
-    Navigation.  See the following articles from the library
-    author for more info:
-
-    - https://medium.com/@graham.mendick/navigation-in-react-native-is-broken-ba5b1f245eb8
-    - https://medium.com/@graham.mendick/three-apps-for-the-price-of-one-3f740f6918ed
-
-[17]: https://router5.js.org
-[18]: http://grahammendick.github.io/navigation/
-
-
-- State Management: [Unstated][19] and [Zustand][20]
-
-    Unstated is one of the simplest yet powerful state management
-    tools for React. It is a direct competitor to Redux, which is
-    by comparison a beast in complication and verbosity. Redux is
-    of course useful but its use can only be justified for very
-    large projects. For others; the complication of the reducer
-    pattern is definitely not worth it; and Unstated is there to
-    remind us that global state conceptually is just like a React
-    component state except that it can be reached from anywhere,
-    and it doesn't have to be more complicated than that. Saves us
-    from a lot of (self-inflicted) pain. Ah, accidental
-    complexity.
-
-    Update: Lately replaced by [Zustand][19] which is basically a
-    hook-driven version of Unstated, as hooks (unfortunately)
-    became *the way* of doing things in React.
-
-[19]: https://github.com/jamiebuilds/unstated
-[20]: https://zustand.surge.sh/
-
-
-- API Calls: [React Refetch][21] and [React Query][22]
-
-    React Refetch is a helper library that makes possible for
-    React components to declaratively make API calls and injects
-    the responses into the component. It handles caching, fetch
-    states, non-fetch async operations, reloading, etc... It's
-    actually the predecessor of the much loved Apollo client. And
-    it is here to remind us that you don't need to learn what a
-    "saga" is to just make a bloody API call.
-
-    Update: Lately replaced by [React Query][21] which is
-    basically a hook-driven version of React Refetch, as hooks
-    (unfortunately) became *the way* of doing things in React.
-
-[21]: https://github.com/heroku/react-refetch
-[22]: https://react-query.tanstack.com/
-
-
-- Form Management: [Formik][23]
-
-    Formik is one of the most popular libraries that solve the
-    "form problem" in the React ecosystem.
-
-    Pretty standard, really. Easy to use, straightforward, and
-    much more popular than its closest competitor, React final
-    form.
-
-    I don't even want to talk about the solutions that send form
-    states to Redux or whatever global state manager. Common
-    sense, people, please.
-
-[23]: https://jaredpalmer.com/formik/
-
-
-- Dataviz: [React-Vis][24] and [Visx][25]
-
-    React-Vis is a simple and flexible data visualization library
-    for React by Uber that is built on top of the popular D3 data
-    visualization library. Simple, composable; a great D3 wrapper
-    for React that strikes the right balance. Achieves to remain
-    being a simple but useful D3 wrapper; and doesn't invent an
-    unncessary and overly complex API layer on top of it. What a
-    great feature.
-
-    Update: Lately replaced by [Visx][25] as React Vis
-    unfortunately isn't maintained anymore. Visx is a bit lower
-    level than I prefer, but it offers great power and flexibility
-    and it's worth paying the lower level implementation price in
-    most scenarios.
-
-[24]: https://uber.github.io/react-vis/
-[25]: https://airbnb.io/visx/
-
-
-- Styling: [CSS-Modules][26]
-
-    People are inventing whole new approaches to styling apps
-    these days, but plain old CSS works still great. CSS Modules
-    is just a small tool to scope sets of styling rules to
-    individual components to prevent id &amp; class name conflicts
-    between components.
-
-    Styled components? No thank you. It is hard to forgive it for
-    popularizing the "spaghetti CSS" approach to React codebases.
-    While this can be defended in the name of pragmatism; I never
-    felt the need to reach to this to this day.
-
-    The CSS module approach work in React Native as well. The
-    styles can be imported from a separate module. And because
-    there is no "class" concept in React Native, styles that
-    should react to some input can be exported as memoized
-    functions instead of as POJOs. Works like a charm, without
-    bloated deps!!
-
-[26]: https://github.com/css-modules/css-modules
-
-
-- SSR: [Razzle][27]
-
-    SSR is required for Google-able, marketable, content-first
-    websites. There is no denying that.
-
-    Razzle is a good solution that offers SSR capabilities without
-    being a full framework (like Next.js).
-
-[27]: https://github.com/jaredpalmer/razzle
-
-
-## trivia
-
-I am that stereotypical know-it-all hacker who touch types in Arch
+chosen for.</p>
+
+<p>A project&#8217;s stack is always tailored according to its specific
+needs, but below are my default choices.</p>
+
+<h4 id="backend">backend</h4>
+
+<ul>
+<li><p>DB: <a href="https://postgresql.org">Postgres</a></p>
+
+<p>Postgres is the best general purpose open source database
+available in the market. Being an ACID RDBMS, it natively
+guarantees data integrity (which is usually very important) as
+opposed to NoSQL options such as MongoDB (which is an
+overly-hyped alternative that is unfit to be a primary
+database for most serious projects; mostly made popular by
+people who don&#8217;t have time or motivation to learn RDBMSs.)</p>
+
+<p>Good use of modern SQL on top of a fully featured database
+like Postgres can simplify many complex problems that
+traditionally required backend devs to write lines and lines
+of ugly code in the application layer.</p>
+
+<p>I love Postgres from its command line client to its rich data
+types, to its foreign data wrappers. A really a good and
+reliable piece of tech.</p></li>
+<li><p>DB Migrations: <a href="https://github.com/rickbergfalk/postgrator">Postgrator</a> + <a href="https://github.com/djrobstep/migra">Migra</a></p>
+
+<p>Migrations are a pain in the ass and everybody knows that.
+MongoDB owes its popularity to this fact.</p>
+
+<p>But if you want a reliable system migrations are a necessary
+evil.</p>
+
+<p>But actually what&#8217;s evil is not the migrations. Migrations is
+a solution to an inherently complex problem and it&#8217;s fine.</p>
+
+<p>What&#8217;s evil is the tooling, mostly. Most migration tools add
+unnecessary additional complexity to this already inherently
+complex problem.</p>
+
+<p>In my opinion; the combination of a database schema diff tool
+with a raw SQL migration manager is the most elegant solution
+to the database migration problem. This database diffing
+approach is sometimes called &#8220;state driven database delivery&#8221;
+and works great.</p></li>
+<li><p>Data Access &#38; Manipulation: <a href="https://massivejs.org">Massive</a></p>
+
+<p>Massive is a library for talking to Postgres databases that
+offers an experience comparable to the one that ORMs offer;
+without having their many downsides (Just ask any backend dev
+about ORMs). It&#8217;s both simple, performant and easy of use;
+which is a combination very hard to find in the database
+library space. Just lovely.</p>
+
+<p><a href="https://youtu.be/wgoPa5Kn0n0">https:&#47;&#47;youtu.be&#47;wgoPa5Kn0n0</a></p>
+
+<p>Update: Replaced with bare pg and bare SQL</p></li>
+<li><p>API Framework: <a href="https://fastify.io">Fastify</a></p>
+
+<p>Fastify is one of the fastest and modern frameworks for
+creating mostly REST style APIs. The project is well designed
+and small, yet offers many of the important features an API
+developer would need.</p>
+
+<p>Update: I no longer use Fastify a lot. Actually I no longer
+typically use frameworks. But I use their parts as necessary</p></li>
+</ul>
+
+<h4 id="frontend">frontend</h4>
+
+<ul>
+<li><p>Framework: <a href="https://reactjs.org">React</a></p>
+
+<p>Well, React is great and you know that. The fact that the
+React ecosystem, most of the React developers, and the
+direction the React team is going to is shitty doesn&#8217;t change
+that. A React app flourishes under talented &#38; experienced
+hands that that understands simplicity and don&#8217;t buy the hype.</p></li>
+<li><p>Routing: <a href="https://router5.js.org">Router5</a> and <a href="http://grahammendick.github.io/navigation/">Navigation</a></p>
+
+<p>Router5 is a framework agnostic router (means that it can be
+used in non-React projects as well) that gets everything right
+about routing. It is so much better designed and more useful
+(especially in non-trivial scenarios) than the standard go to
+option React Router.</p>
+
+<p>The Navigation router is a fine router for React Native.
+Although it is not mainstream and its API has considerable
+room for improvement; the features it offer are great compared
+to its competitors React Navigation and React Native
+Navigation.  See the following articles from the library
+author for more info:</p>
+
+<ul>
+<li><a
+href="https://medium.com/@graham.mendick/navigation-in-react-native-is-broken-ba5b1f245eb8">Navigation
+in React Native is broken</a></li>
+<li><a
+href="https://medium.com/@graham.mendick/three-apps-for-the-price-of-one-3f740f6918ed">Three
+apps for the price of one</a></li>
+</ul></li>
+<li><p>State Management: <a href="https://github.com/jamiebuilds/unstated">Unstated</a> and <a href="https://zustand.surge.sh/">Zustand</a></p>
+
+<p>Unstated is one of the simplest yet powerful state management
+tools for React. It is a direct competitor to Redux, which is
+by comparison a beast in complication and verbosity. Redux is
+of course useful but its use can only be justified for very
+large projects. For others; the complication of the reducer
+pattern is definitely not worth it; and Unstated is there to
+remind us that global state conceptually is just like a React
+component state except that it can be reached from anywhere,
+and it doesn&#8217;t have to be more complicated than that. Saves us
+from a lot of (self-inflicted) pain. Ah, accidental
+complexity.</p>
+
+<p>Update: Lately replaced by <a href="https://github.com/jamiebuilds/unstated">Zustand</a> which is basically a
+hook-driven version of Unstated, as hooks (unfortunately)
+became <em>the way</em> of doing things in React.</p></li>
+<li><p>API Calls: <a href="https://github.com/heroku/react-refetch">React Refetch</a> and <a href="https://react-query.tanstack.com/">React Query</a></p>
+
+<p>React Refetch is a helper library that makes possible for
+React components to declaratively make API calls and injects
+the responses into the component. It handles caching, fetch
+states, non-fetch async operations, reloading, etc&#8230; It&#8217;s
+actually the predecessor of the much loved Apollo client. And
+it is here to remind us that you don&#8217;t need to learn what a
+&#8220;saga&#8221; is to just make a bloody API call.</p>
+
+<p>Update: Lately replaced by <a href="https://github.com/heroku/react-refetch">React Query</a> which is
+basically a hook-driven version of React Refetch, as hooks
+(unfortunately) became <em>the way</em> of doing things in React.</p></li>
+<li><p>Form Management: <a href="https://jaredpalmer.com/formik/">Formik</a></p>
+
+<p>Formik is one of the most popular libraries that solve the
+&#8220;form problem&#8221; in the React ecosystem.</p>
+
+<p>Pretty standard, really. Easy to use, straightforward, and
+much more popular than its closest competitor, React final
+form.</p>
+
+<p>I don&#8217;t even want to talk about the solutions that send form
+states to Redux or whatever global state manager. Common
+sense, people, please.</p></li>
+<li><p>Dataviz: <a href="https://uber.github.io/react-vis/">React-Vis</a> and <a href="https://airbnb.io/visx/">Visx</a></p>
+
+<p>React-Vis is a simple and flexible data visualization library
+for React by Uber that is built on top of the popular D3 data
+visualization library. Simple, composable; a great D3 wrapper
+for React that strikes the right balance. Achieves to remain
+being a simple but useful D3 wrapper; and doesn&#8217;t invent an
+unncessary and overly complex API layer on top of it. What a
+great feature.</p>
+
+<p>Update: Lately replaced by <a href="https://airbnb.io/visx/">Visx</a> as React Vis
+unfortunately isn&#8217;t maintained anymore. Visx is a bit lower
+level than I prefer, but it offers great power and flexibility
+and it&#8217;s worth paying the lower level implementation price in
+most scenarios.</p></li>
+<li><p>Styling: <a href="https://github.com/css-modules/css-modules">CSS-Modules</a></p>
+
+<p>People are inventing whole new approaches to styling apps
+these days, but plain old CSS works still great. CSS Modules
+is just a small tool to scope sets of styling rules to
+individual components to prevent id &#38; class name conflicts
+between components.</p>
+
+<p>Styled components? No thank you. It is hard to forgive it for
+popularizing the &#8220;spaghetti CSS&#8221; approach to React codebases.
+While this can be defended in the name of pragmatism; I never
+felt the need to reach to this to this day.</p>
+
+<p>The CSS module approach work in React Native as well. The
+styles can be imported from a separate module. And because
+there is no &#8220;class&#8221; concept in React Native, styles that
+should react to some input can be exported as memoized
+functions instead of as POJOs. Works like a charm, without
+bloated deps!!</p></li>
+<li><p>SSR: <a href="https://github.com/jaredpalmer/razzle">Razzle</a></p>
+
+<p>SSR is required for Google-able, marketable, content-first
+websites. There is no denying that.</p>
+
+<p>Razzle is a good solution that offers SSR capabilities without
+being a full framework (like Next.js).</p></li>
+</ul>
+
+<h2 id="trivia">trivia</h2>
+
+<p>I am that stereotypical know-it-all hacker who touch types in Arch
 Linux with the lights off, follows Suckless, has the coolest UNIX
 environment ever, sends encrypted email from Mutt, does in VIM in
 three keystrokes stuff that takes your twenty clicks and two
@@ -512,32 +453,33 @@ aggressively removes inessential dependencies and code regularly,
 knows about super weird Git flags, generates flow charts from
 GraphViz Dot, collects weird keyboards, etc, etc.. Your typical
 senior opinionated web generation nerd with a command line fetish
-(or should I say, ergonomics?).
+(or should I say, ergonomics?).</p>
 
-Good thing is that I also happen to know how to fucking ship
+<p>Good thing is that I also happen to know how to fucking ship
 products. My challenge has always been to combine my ultra nerdy
-attitude with a pragmatic approach. "worse is better", "boring
-technology", KISS, YAGNI, Pareto analysis, bla, bla. That has
+attitude with a pragmatic approach. &#8220;worse is better&#8221;, &#8220;boring
+technology&#8221;, KISS, YAGNI, Pareto analysis, bla, bla. That has
 always been a requirement for my survival in my heavily product
-and startup oriented career.
+and startup oriented career.</p>
 
-More trivia:
+<p>More trivia:</p>
 
-I ..
+<p>I ..</p>
 
-- type faster than you
-- know a lot of funny jazz chords
-- am a regular water faster
-- once published a philosophy magazine
-- know a lot about good nutrition
-- can probably beat you in tennis
-- have a twin sister
-- love avocados
-- am not passionate about technology (!) (just a tool it is)
-- speak a bit French (studied it for ~5 years once)
-- don't have a home since 2018 and live in hotels, hostels &amp; vans
-- love things on wheels: have e-scooters, bikes, motorbikes &amp; a van
-</pre>
+<ul>
+<li>type faster than you</li>
+<li>know a lot of funny jazz chords</li>
+<li>am a regular water faster</li>
+<li>once published a philosophy magazine</li>
+<li>know a lot about good nutrition</li>
+<li>can probably beat you in tennis</li>
+<li>have a twin sister</li>
+<li>love avocados</li>
+<li>am not passionate about technology (!) (just a tool it is)</li>
+<li>speak a bit French (studied it for ~5 years once)</li>
+<li>don&#8217;t have a home since 2018 and live in hotels, hostels &#38; vans</li>
+<li>love things on wheels: have e-scooters, bikes, motorbikes &#38; a van</li>
+</ul>
 
 </body>
 </html>

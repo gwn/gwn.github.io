@@ -1,29 +1,74 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8" />
+
+<title>gwn - not your usual hacker</title>
 
 <style>
-body {font: 18px/24px sans-serif;}
+body {
+    background-color: #000;
+    margin: 1em;
+    color: white;
+    font: 18px/32px monospace;
+    text-align: center;
+}
+main {
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+p {margin: 1.5em;}
 a, a:link, a:visited {color: green; text-decoration: none;}
-ul {list-style-type: none; padding: 0;}
-li {margin-bottom: 5px;}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+li {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 0 0.75em;
+}
+li::before {
+    content: '  ';
+}
+li:first-child::before {
+    content: '';
+}
+img {
+    border-radius: 1000px;
+    margin-bottom: 0.75em;
+    cursor: crosshair;
+}
+input {
+    display: none;
+}
+input:checked + img {
+    filter: invert(1);
+}
 </style>
 
-<h3>welcome to gwn's web page</h3>
+<main>
+    <p>
+        <label>
+            <input type='checkbox' />
+            <img src='./gwn.small.jpg' />
+        </label>
+    </p>
 
-no bullshit software development since 2007
+    <p><nobr>no bullshit</nobr> <nobr>software development</nobr><br />since 2007<p>
 
-<ul>
-    <li>say hello: me at gwn dot wtf</li>
-    <li>u mean business? dev at gwn dot wtf</li>
-    <li><a href="key.asc.txt">gpg</a></li>
-    <li><a href="resume.html">resume</a></li>
-    <li><a href="https://news.ycombinator.com/user?id=gwn7" target="_blank">hackernews</a></li>
-    <li><a href="https://lobste.rs/u/gwn" target="_blank">lobsters</a></li>
-    <li><a href="https://angel.co/u/gwn" target="_blank">angellist</a></li>
-    <li><a href="https://twitter.com/technohipster42" target="_blank">twitter</a></li>
-    <li><a href="https://instagram.com/technohipster42" target="_blank">instagram</a></li>
-    <li><a href="https://open.spotify.com/user/gvnz" target="_blank">spotify</a></li>
-    <li><a href="https://calendly.com/gwn7/biz" target="_blank">rendezvous</a></li>
-    <li><a href="https://github.com/gwn/ama/blob/master/README.md#ask-me-anything" target="_blank">ama</a></li>
-    <li><a href="wisdom.html">wisdom</a></li>
-    <li><a href="/">home</a></li>
-</ul>
+    <ul>
+        <li><a href="resume.html">cv</a></li>
+        <li><a href="https://news.ycombinator.com/user?id=gwn7">hn</a></li>
+        <li><a href="https://github.com/gwn">oss</a></li>
+        <li><a href="key.asc.txt">gpg</a></li>
+        <li><a href="mailto:dev@gwn.wtf">msg</a></li>
+        <li><a href="wisdom.html">ftw</a></li>
+        <li><a href="/">wtf</a></li>
+    </ul>
+</main>
