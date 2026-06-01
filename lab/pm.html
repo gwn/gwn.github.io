@@ -1,0 +1,498 @@
+<html>
+<head>
+<title>Project Management | lab@gwn</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<style type="text/css">body {
+    max-width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+    padding: 2em;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+a:link,
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+nav {
+    padding: 1em;
+    background-color: #eee;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.3em;
+}
+h5 {
+    font-size: 1.1em;
+    color: #555;
+}
+h2 {
+    color: #ddd;
+}
+h1 > a:first-child,
+h2 > a:first-child,
+h3 > a:first-child,
+h4 > a:first-child,
+h5 > a:first-child,
+h6 > a:first-child {
+    margin-right: 0.2em;
+}
+.index ul {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    list-style-type: none;
+    font-family: monospace;
+    font-size: 1.6em;
+    line-height: 2.4em;
+}
+.index ul li {
+    display: inline-block;
+    margin: 0 1em;
+}
+a.back {
+    float: right;
+    font-size: 0.8em;
+    padding: 0 0.4em;
+}
+.superscript {
+    vertical-align: super;
+    font-size: 0.7em;
+}
+.small {
+    font-size: 0.8em;
+}
+blockquote {
+    background-color: #eee;
+    border-left: 3px solid #aaa;
+    padding: 0.1em 1em;
+    margin: 2em 0;
+    color: #444;
+    text-align: center;
+    font-family: monospace;
+}
+hr {
+    margin: 3em 0;
+}
+</style>
+</head>
+<body>
+<a class="back" href="/">^home</a>
+<h2>Project Management</h2>
+<nav>
+<ol>
+<li>
+<a href="#bootstrapping">Bootstrapping</a>
+</li>
+<li>
+<a href="#project-wikis">Project Wikis</a>
+</li>
+<li>
+<a href="#task-trackers">Task Trackers</a>
+</li>
+<li>
+<a href="#mailing-lists">Mailing Lists</a>
+</li>
+<li>
+<a href="#meetings">Meetings</a>
+</li>
+<li>
+<a href="#communication-preferences">Communication Preferences</a>
+</li>
+<li>
+<a href="#reporting">Reporting</a>
+</li>
+<li>
+<a href="#code-repositories">Code Repositories</a>
+</li>
+<li>
+<a href="#project-lifecycle">Project Lifecycle</a>
+<ul style="list-style: none; padding-left: 1rem">
+<li>
+<a href="#collaboration-request">Collaboration Request</a>
+</li>
+<li>
+<a href="#bootstrapping">Bootstrapping</a>
+</li>
+<li>
+<a href="#requirements-analysis">Requirements Analysis</a>
+</li>
+<li>
+<a href="#technical-analysis">Technical Analysis</a>
+</li>
+<li>
+<a href="#determining-the-acceptance-criteria">Determining the Acceptance Criteria</a>
+</li>
+<li>
+<a href="#determining-the-milestones">Determining the Milestones</a>
+</li>
+<li>
+<a href="#estimation">Estimation</a>
+</li>
+<li>
+<a href="#agreeing-on-the-compensation-method-amp-numbers">Agreeing on the Compensation Method &amp; Numbers</a>
+</li>
+<li>
+<a href="#determining-the-product-owner">Determining the Product Owner</a>
+</li>
+<li>
+<a href="#determining-atomic-deliverables">Determining Atomic Deliverables</a>
+</li>
+<li>
+<a href="#implementation">Implementation</a>
+</li>
+<li>
+<a href="#quality-assurance">Quality Assurance</a>
+</li>
+<li>
+<a href="#feedback-gathering">Feedback Gathering</a>
+</li>
+<li>
+<a href="#bugfixes-and-revisions">Bugfixes and Revisions</a>
+</li>
+</ul>
+</li>
+</ol>
+</nav>
+<main><h3 id="bootstrapping"><a href="#bootstrapping" rel="nofollow noopener">#</a>Bootstrapping</h3>
+<p>Once a project is started, the following will be created:</p>
+<ul>
+<li>A project <a href="#project-wikis" rel="nofollow noopener">wiki</a></li>
+<li>A <a href="#task-trackers" rel="nofollow noopener">task tracker</a></li>
+<li><a href="#mailing-lists" rel="nofollow noopener">Mailing lists</a> for announcements, discussions and development</li>
+<li>One or more <a href="#code-repositories" rel="nofollow noopener">code repositories</a> according to the needs</li>
+</ul>
+<p>Then everyone involved with the project will be sent an e-mail
+containing more information on the project and the resources
+mentioned above.</p>
+<p>Everyone involved will be given access to the project mailing
+lists by their e-mail address. If being part of the discussions is
+all you need you are fine. Just <a href="#mailing-lists" rel="nofollow noopener">subscribe to the mailing
+lists</a> and get on with your life.</p>
+<p>But if you'll need to access the mailing list archives, project
+wiki, task tracker and code repositories you'll need to create a
+<a href="https://sourcehut.org" rel="nofollow noopener">Sourcehut</a><span class="superscript">[1]</span> contributor
+account. <a href="https://meta.sr.ht/register" rel="nofollow noopener">Registration</a> is very easy, quick and free.
+After registering send your username to the project manager so
+that you'll be given access.</p>
+<hr/>
+<div class="small">
+    [1]: Our preferred software project development &amp;
+    management service. Something like Github but simpler.
+</div>
+<h3 id="project-wikis"><a href="#project-wikis" rel="nofollow noopener">#</a>Project Wikis</h3>
+<p>Wikis contain project documentations.</p>
+<p>A project's wiki will be accessible via
+<code>https://git.sr.ht/~gwn/&lt;proj-id&gt;-wiki</code></p>
+<p>The following information will be available from the outset:</p>
+<ul>
+<li>Links to the project's task tracker, mailing lists, code
+repositories and instructions for accessing them.</li>
+</ul>
+<p>And the following information will be added as soon as ready:</p>
+<ul>
+<li>The requirements specification</li>
+<li>The technical specification</li>
+<li>The acceptance criteria</li>
+<li>Staging, test, production addresses (if applicable)</li>
+<li>Instructions for previewing &amp; testing</li>
+<li>RFCs (if any)</li>
+</ul>
+<p>RFCs should be introduced &amp; discussed in the project's discussion
+mailing list then transferred to the wiki when ready.</p>
+<h3 id="task-trackers"><a href="#task-trackers" rel="nofollow noopener">#</a>Task Trackers</h3>
+<p>Task trackers are used for tracking todo items such as bugs and
+features.</p>
+<p>A project's task tracker will be accessible via
+<code>https://todo.sr.ht/~gwn/&lt;proj-id&gt;</code></p>
+<p>Initially one task will be created for each step of the <a href="#project-lifecycle" rel="nofollow noopener">Project
+Lifecycle</a> starting with the "Requirements
+Analysis" step up until the "Determine Atomic Deliverables" step.</p>
+<p>As soon as the "Determining Atomic Deliverables" task is dealt
+with, those atomic deliverables will be added as new tasks.</p>
+<p>But irrespective of all that anyone who has access to a tracker
+can create tasks anytime.</p>
+<p>One important note is that clients / partners are discouraged from
+filing bug reports &amp; feature requests directly to the task
+trackers. Instead they are encouraged to post them to the
+project's discussion mailing list. If &amp; when the bug report /
+feature request is confirmed then a project manager or a developer
+can create a task in the tracker. This flow might be enforced from
+time to time by giving clients / partners only read &amp; comment
+permissions (but not submission) to task trackers. You can check
+out <a href="https://sourcehut.org/blog/2021-04-29-bug-trackers-are-for-bugs" rel="nofollow noopener">a relevant Sourcehut blog post</a> for get
+more information on this approach.</p>
+<p>Detailed documentation of the task trackers can be found in the
+<a href="https://man.sr.ht/todo.sr.ht" rel="nofollow noopener">Sourcehut todo wiki</a>.</p>
+<h3 id="mailing-lists"><a href="#mailing-lists" rel="nofollow noopener">#</a>Mailing Lists</h3>
+<p>Mailing lists are used for announcements, general discussion, bug
+reports, feature requests, development discussion and patch
+submissions.</p>
+<p>There will be 3 lists per project:</p>
+<ul>
+<li>
+<p>Announcement: A mostly read-only list used by the project owners
+&amp; developers to make announcements about the project.
+Announcement frequency depends on the project.</p>
+<ul>
+<li>
+<p>Subscribe by sending an empty email to
+<code>~gwn/&lt;proj-id&gt;-announce+subscribe@lists.sr.ht</code></p>
+</li>
+<li>
+<p>Unsubscribe by sending an empty email to
+<code>~gwn/&lt;proj-id&gt;-announce+unsubscribe@lists.sr.ht</code></p>
+</li>
+<li>
+<p>Post by sending to
+<code>~gwn/&lt;proj-id&gt;-announce+subscribe@lists.sr.ht</code></p>
+</li>
+<li>
+<p>Read the archives by visiting
+<code>https://lists.sr.ht/~gwn/&lt;proj-id&gt;-announce</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Discussions: A list for general discussion, questions, bug
+reports, feature requests, RFCs, etc.</p>
+<ul>
+<li>
+<p>Subscribe by sending an empty email to
+<code>~gwn/&lt;proj-id&gt;-discuss+subscribe@lists.sr.ht</code></p>
+</li>
+<li>
+<p>Unsubscribe by sending an empty email to
+<code>~gwn/&lt;proj-id&gt;-discuss+unsubscribe@lists.sr.ht</code></p>
+</li>
+<li>
+<p>Post by sending to
+<code>~gwn/&lt;proj-id&gt;-discuss+subscribe@lists.sr.ht</code></p>
+</li>
+<li>
+<p>Read the archives by visiting
+<code>https://lists.sr.ht/~gwn/&lt;proj-id&gt;-discuss</code></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Development: A list for technical discussion and patch
+submissions.</p>
+<ul>
+<li>
+<p>Subscribe by sending an empty email to
+<code>~gwn/&lt;proj-id&gt;-devel+subscribe@lists.sr.ht</code></p>
+</li>
+<li>
+<p>Unsubscribe by sending an empty email to
+<code>~gwn/&lt;proj-id&gt;-devel+unsubscribe@lists.sr.ht</code></p>
+</li>
+<li>
+<p>Post by sending to
+<code>~gwn/&lt;proj-id&gt;-devel+subscribe@lists.sr.ht</code></p>
+</li>
+<li>
+<p>Read the archives by visiting
+<code>https://lists.sr.ht/~gwn/&lt;proj-id&gt;-devel</code></p>
+</li>
+<li>
+<p>Submit patches with the <a href="https://man.sr.ht/git.sr.ht/send-email.md" rel="nofollow noopener">Git send-email method</a></p>
+</li>
+<li>
+<p>See the patch history by visiting
+<code>https://lists.sr.ht/~gwn/&lt;proj-id&gt;-devel/patches</code></p>
+</li>
+</ul>
+</li>
+</ul>
+<p>Detailed documentation for the mailing lists can be found in the
+<a href="https://man.sr.ht/lists.sr.ht" rel="nofollow noopener">Sourcehut mailing list documentation</a>.</p>
+<h3 id="meetings"><a href="#meetings" rel="nofollow noopener">#</a>Meetings</h3>
+<p>Anyone should be able request meetings from each other at any time
+as long as they follow the below guidelines:</p>
+<ul>
+<li>
+<p>Meeting requests can be communicated via the discussion <a href="#mailing-lists" rel="nofollow noopener">mailing
+list</a> for group meetings and direct emails / IMs
+for one-on-one meetings.</p>
+</li>
+<li>
+<p>A clear meeting agenda should be communicated along with the
+meeting request. Requests without a clear agenda may be ignored.</p>
+</li>
+<li>
+<p>Unless all the invitees have shared calendars, an appointment
+scheduling software such as Calendly or Doodle should be used to
+avoid wasting time on trying to align everybody's available time
+slots.</p>
+</li>
+<li>
+<p>A tool that doesn't require an account should be used for the
+actual meeting. Examples: Google Meet, Zoom, Whatsapp.</p>
+</li>
+</ul>
+<p>Meeting logs will be produced and saved into the project wiki by
+our members for most meetings.</p>
+<h3 id="communication-preferences"><a href="#communication-preferences" rel="nofollow noopener">#</a>Communication Preferences</h3>
+<p>Our preferred communication channels are <a href="#mailing-lists" rel="nofollow noopener">mailing
+lists</a> &amp; <a href="#task-trackers" rel="nofollow noopener">task trackers</a>.</p>
+<p>General discussion, help requests, Q&amp;As, bug reports and feature
+requests can be made in a project's discussion mailing list. It's
+also ok to make use of IM apps for banter &amp; voice exchanges but
+the important &amp; actionable stuff should always go to the mailing
+lists. There should be no expectation from us to follow through an
+IM feed. Only post stuff there that you can afford to be ignored.
+We will not cherry pick requirements &amp; issues from Telegram
+histories.</p>
+<p>Bug reports &amp; feature requests are <strong>required</strong> to be communicated
+via the discussion mailing list or the task tracker (if
+applicable). They will be ignored when communicated via phone
+calls / instant messages.</p>
+<p>Phone calls are ok as long as an immediate exchange is needed. Our
+phones will be on and we will always try to be reachable as long
+as you don't abuse this.</p>
+<p>We don't guarantee enabling IM notifications on our phones so when
+you need to reach us immediately opt for phone calls instead of
+text messages.</p>
+<p>Scheduled <a href="#meetings" rel="nofollow noopener">meetings</a> are ok when they make sense. We
+have two general rules:</p>
+<ul>
+<li>
+<p>We don't do regular meetings nor standups unless there are good
+reasons. They are nearly always set up on demand.</p>
+</li>
+<li>
+<p>As meetings are taxing we encourage you to think twice before
+requesting one if the exchange can be done in an async manner be
+it with a written or a voice / video message. A business meeting
+should only be requested when an interactive exchange is
+absolutely necessary or at least will lead to much better
+outcomes than an async exchange.</p>
+</li>
+</ul>
+<h3 id="reporting"><a href="#reporting" rel="nofollow noopener">#</a>Reporting</h3>
+<p>By default we post weekly logs to the project's announcement
+mailing list to communicate status.</p>
+<p>Depending on the circumstances other kinds of reports such as
+daily logs, monthly retrospectives, etc can be agreed on.</p>
+<h3 id="code-repositories"><a href="#code-repositories" rel="nofollow noopener">#</a>Code Repositories</h3>
+<p>Once a project is accepted, one or more code repositories will be
+created with names identical to or derivative of the project code
+name. So for a project with the code name "dummy" we can have
+repositories such as "dummy", "dummy-api", "dummy-client" etc.
+They would be reachable via the following URLs:</p>
+<ul>
+<li><code>https://git.sr.ht/~gwn/dummy</code></li>
+<li><code>https://git.sr.ht/~gwn/dummy-api</code></li>
+<li><code>https://git.sr.ht/~gwn/dummy-client</code></li>
+</ul>
+<p>And with the Git protocol:</p>
+<ul>
+<li><code>git@git.sr.ht:~gwn/dummy</code></li>
+<li><code>git@git.sr.ht:~gwn/dummy-api</code></li>
+<li><code>git@git.sr.ht:~gwn/dummy-client</code></li>
+</ul>
+<p>The list of code repositories can be seen in the project's source
+index page at <code>https://sr.ht/~gwn/&lt;proj-id&gt;/sources</code></p>
+<p>The repositories may or may not be accessible to clients &amp;
+partners depending on the nature of the related arrangement.</p>
+<p>The Sourcehut Git web interface supports patch submissions via
+forms that can be used by developers who are used to the "pull
+request" paradigm and not comfortable with the <a href="https://man.sr.ht/git.sr.ht/send-email.md" rel="nofollow noopener">Git send-email
+method</a>. See <a href="https://man.sr.ht/git.sr.ht/#sending-patches-upstream" rel="nofollow noopener">here</a> for
+instructions.</p>
+<h3 id="project-lifecycle"><a href="#project-lifecycle" rel="nofollow noopener">#</a>Project Lifecycle</h3>
+<ol>
+<li><a href="#collaboration-request" rel="nofollow noopener">Collaboration request</a></li>
+<li><a href="#bootstrapping" rel="nofollow noopener">Bootstrapping</a></li>
+<li><a href="#requirements-analysis" rel="nofollow noopener">Requirements analysis</a></li>
+<li><a href="#technical-analysis" rel="nofollow noopener">Technical analysis</a></li>
+<li><a href="#determining-the-acceptance-criteria" rel="nofollow noopener">Determining the acceptance criteria</a></li>
+<li><a href="#determining-the-milestones" rel="nofollow noopener">Determining the milestones</a></li>
+<li><a href="#estimation" rel="nofollow noopener">Estimation</a></li>
+<li><a href="#agreeing-on-the-compensation-method-amp-numbers" rel="nofollow noopener">Agreeing on the compensation method &amp;
+numbers</a></li>
+<li><a href="#determining-the-product-owner" rel="nofollow noopener">Determining the product owner</a></li>
+<li><a href="#determining-atomic-deliverables" rel="nofollow noopener">Determining atomic deliverables</a></li>
+<li><a href="#implementation" rel="nofollow noopener">Implementation</a></li>
+<li><a href="#quality-assurance" rel="nofollow noopener">Quality assurance</a></li>
+<li><a href="#feedback-gathering" rel="nofollow noopener">Feedback gathering</a></li>
+<li><a href="#bugfixes-and-revisions" rel="nofollow noopener">Bugfixes and revisions</a></li>
+<li>Go to 12</li>
+</ol>
+<h4 id="collaboration-request"><a href="#collaboration-request" rel="nofollow noopener">#</a>Collaboration Request</h4>
+<p>A project comes to life when a client / partner approaches us with
+a collaboration request. We require this request to be formalized
+with an email containing the details specified in the
+<a href="hire.html" rel="nofollow noopener">Hire</a> page.</p>
+<h4 id="bootstrapping"><a href="#bootstrapping" rel="nofollow noopener">#</a>Bootstrapping</h4>
+<p>A <a href="#project-wikis" rel="nofollow noopener">wiki</a>, an <a href="#task-trackers" rel="nofollow noopener">task tracker</a>,
+<a href="#mailing-lists" rel="nofollow noopener">mailing lists</a> and one or more <a href="#code-repositories" rel="nofollow noopener">code
+repositories</a> are created for the project.</p>
+<p>Client / partner is sent the link to the project wiki.</p>
+<h4 id="requirements-analysis"><a href="#requirements-analysis" rel="nofollow noopener">#</a>Requirements Analysis</h4>
+<p>Requirements analysis is a process with the goal of
+understanding &amp; clarifying the motivations behind &amp; expected
+outcomes of a project by interviewing all the stakeholders of
+the project to understand their needs, resolving any conflicts
+and in the end produce a document called a "requirements
+specification" that all the stakeholders can agree on.</p>
+<h4 id="technical-analysis"><a href="#technical-analysis" rel="nofollow noopener">#</a>Technical Analysis</h4>
+<p>Technical analysis is the process of analyzing the requirements
+from a technical perspective to evaluate feasibility, identify
+potential trade-offs and risks. The goal is to produce a document
+called a "technical specification" that loosely specifies a tech
+stack, a system architecture and a development roadmap.</p>
+<p>Findings made during the technical analysis may require changes in
+the requirements.</p>
+<h4 id="determining-the-acceptance-criteria"><a href="#determining-the-acceptance-criteria" rel="nofollow noopener">#</a>Determining the Acceptance Criteria</h4>
+<p>Unambiguous acceptance criteria makes it possible for the
+developers to make implementations with minimal friction and for
+the clients to validate the completeness &amp; correctness of those
+implementations.</p>
+<p>It's important to determine them as specifically and as early as
+possible to avoid otherwise redundant iterations.</p>
+<h4 id="determining-the-milestones"><a href="#determining-the-milestones" rel="nofollow noopener">#</a>Determining the Milestones</h4>
+<p>There are multiple atomic deliverables in a typical project.
+Deliverables change, and new ones are added over time. But still
+they should be <em>roughly</em> identifiable in the beginning of a
+project.</p>
+<p>Some deliverables can be dealt with in parallel, some can not as
+they may depend on another deliverable or something else. And
+often a deliverable is postponed even if it can be dealt with in
+parallel to others simply because of its low priority.</p>
+<p>Milestones help prioritization by grouping atomic deliverables
+together according to the project roadmap.</p>
+<h4 id="estimation"><a href="#estimation" rel="nofollow noopener">#</a>Estimation</h4>
+<p>Once the acceptance criteria are clear and the milestones are set,
+developers are able to provide estimated delivery dates.</p>
+<p>Not all estimations can have the same confidence rate. They depend
+on the nature of the requirements.</p>
+<h4 id="agreeing-on-the-compensation-method-amp-numbers"><a href="#agreeing-on-the-compensation-method-amp-numbers" rel="nofollow noopener">#</a>Agreeing on the Compensation Method &amp; Numbers</h4>
+<p>Compensation methods: Cash, revenue sharing, stocks</p>
+<h4 id="determining-the-product-owner"><a href="#determining-the-product-owner" rel="nofollow noopener">#</a>Determining the Product Owner</h4>
+<p>All projects will be assigned a single product owner who will be
+the main responsible. There will also be a "main contact" chosen
+from the client's / partner's side.</p>
+<p>Those two people will be responsible of getting things going.</p>
+<h4 id="determining-atomic-deliverables"><a href="#determining-atomic-deliverables" rel="nofollow noopener">#</a>Determining Atomic Deliverables</h4>
+<p>WIP</p>
+<h4 id="implementation"><a href="#implementation" rel="nofollow noopener">#</a>Implementation</h4>
+<p>WIP</p>
+<h4 id="quality-assurance"><a href="#quality-assurance" rel="nofollow noopener">#</a>Quality Assurance</h4>
+<p>WIP</p>
+<h4 id="feedback-gathering"><a href="#feedback-gathering" rel="nofollow noopener">#</a>Feedback Gathering</h4>
+<p>WIP</p>
+<h4 id="bugfixes-and-revisions"><a href="#bugfixes-and-revisions" rel="nofollow noopener">#</a>Bugfixes and Revisions</h4>
+<p>WIP</p>
+</main>
+</body>
+</html>
