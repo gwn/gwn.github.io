@@ -1,0 +1,266 @@
+<html>
+<head>
+<title>gwn's Software Manifesto</title>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<style type="text/css">body {
+    max-width: 600px;
+    margin: auto;
+    font-family: sans-serif;
+    padding: 2em;
+    font-size: 1em;
+    line-height: 1.8em;
+}
+a:link,
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+nav, details {
+    padding: 1em;
+    background-color: #eee;
+    margin-bottom: 0.5em;
+}
+details summary {
+  cursor: pointer;
+}
+nav ol {
+  margin: 0;
+  padding-left: 1.5em;
+}
+nav ol > li {
+  padding: 0.1em 0;
+}
+h3 {
+    font-size: 1.6em;
+}
+h4 {
+    font-size: 1.3em;
+}
+h5 {
+    font-size: 1.1em;
+    color: #555;
+}
+h2 {
+    color: #ddd;
+}
+h1 > a:first-child,
+h2 > a:first-child,
+h3 > a:first-child,
+h4 > a:first-child,
+h5 > a:first-child,
+h6 > a:first-child {
+    margin-right: 0.2em;
+}
+blockquote {
+    background-color: #eee;
+    border-left: 3px solid #aaa;
+    padding: 0.1em 1em;
+    margin: 2em 0;
+    color: #444;
+    text-align: center;
+    font-family: monospace;
+}
+</style>
+</head>
+<body>
+<h1>gwn's Software Manifesto</h1>
+
+<details>
+  <summary>Note on AI coding era</summary>
+
+  <p>Below is my software manifesto written in the olden days (2021)
+  when AI coding was not a thing.</p>
+
+  <p>Even if I've been aggressively using coding agents and barely writing code
+  directly anymore since 2025, my claim is that the majority of the principles
+  below stood the test of time. Not all survived, but I won't tell which.</p>
+
+  <p>Feel free to hunt for obsoleted / reinforced claims as an exercise and reach
+  out if you&#39;re interested to discuss!</p>
+</details>
+
+<nav>
+<ol>
+<li><a href="#simplicity">Simplicity</a></li>
+<li><a href="#cost-effectiveness">Cost-effectiveness</a></li>
+<li><a href="#pragmatism-product-mindset">Pragmatism &amp; Product Mindset</a></li>
+<li><a href="#transparency-no-bullshit">Transparency &amp; No-bullshit</a></li>
+<li><a href="#quality-over-quantity">Quality over Quantity</a></li>
+<li><a href="#tech-stack-philosophy">Tech Stack &amp; Philosophy</a></li>
+</ol>
+</nav>
+<main>
+
+<h3 id="simplicity">Simplicity</h3>
+<p>Everybody in the business know that the typical software project
+suffers from missed deadlines, overspending, unreliability,
+frequent rewrites and more.</p>
+<p>This is partly due to the fact that the industry has lost the art
+of simplicity. Especially the web industry. Nearly every web
+project is ridden with unnecessary <a href="https://en.wikipedia.org/wiki/No_Silver_Bullet#Summary">accidental complexity</a>
+these days. Memorized solutions developed by people who don&#39;t
+really understand the inner workings of the technologies &amp;
+techniques they use. It&#39;s no wonder that the majority of software
+projects fail.</p>
+<p>Hackers from the previous generation <a href="https://suckless.org/philosophy/">tried to warn us</a>.
+Apparently it didn&#39;t help much. The quality of the average
+software is worse than ever.</p>
+<p>Especially the web &amp; Javascript world that we most spend time in
+is drowning in complexity &amp; complications. Even the creator of
+Node.JS has once published a rant declaring that he <a href="https://tinyclouds.org/rant">&quot;hates almost
+all software&quot;</a>.</p>
+<p>Is it possible to have a suckless development approach in this
+brave new web dominated world?</p>
+<p>We believe so.</p>
+<p>In this crazy world we made it our specialty to build simple
+systems with few moving parts that contain as little accidental
+complexity as possible. We find this to be a requirement for
+success in this ecosystem.</p>
+<p>Read more details here.</p>
+<blockquote>
+<p>Perfection is achieved, not when there is nothing more to add, but
+when there is nothing left to take away.</p>
+<p>
+- Antoine de Saint-Exupéry
+</p>
+</blockquote>
+<h3 id="cost-effectiveness">Cost-effectiveness</h3>
+<p>Technology is a means to an end.</p>
+<p>A lot of people in the industry miss that. They romanticize
+certain tools and approaches. They want to architect big and fancy
+systems just to please themselves aesthetically / intellectually.
+They are easily sold on shiny popular solutions which deceitfully
+market themselves as being &quot;best practices&quot;.</p>
+<p>These people don&#39;t always completely realize the costs brought by
+the tools &amp; approaches they choose to use!</p>
+<p>As an example, these days it is not surprising to see a developer
+or a product manager proposing an infinitely scalable microservice
+architecture even for a B2B scenario that will involve around 100
+active users at a time.</p>
+<p>In such a case, the cost of designing &amp; developing such a heavy
+system could never be justified. Yet this is common.</p>
+<p>A good engineer doesn&#39;t over-engineer. They analyze the business
+requirements very carefully and design the simplest and the least
+costly solution possible. Potential benefits of the considered
+solutions should always be evaluated in relation to their costs.
+(Costs in terms of money, time, attention and other assets)</p>
+<p>There are <a href="https://en.wikipedia.org/wiki/No_free_lunch_theorem">no free lunches</a>.</p>
+<p>Our goal is to always carefully analyze the requirements we
+receive and come up with solutions that are as cheap as possible
+without sacrificing feature completeness, reliability, and
+security.</p>
+<p>We don&#39;t sell you what you don&#39;t need.</p>
+<h3 id="pragmatism-product-mindset">Pragmatism &amp; Product Mindset</h3>
+<p>We may be clinical nerds, but good thing is that we also happen to
+know how to ship products. We realize that technology is a means
+to an end. And we know what corners to cut when the situation
+demands.</p>
+<p>Our challenge has always been to combine our ultra nerdy attitude
+with a pragmatic approach. Worse is better, boring technology,
+KISS, YAGNI, Pareto analysis, etc. That has always been a
+requirement for our survival in our heavily product and startup
+oriented journey.</p>
+<h3 id="transparency-no-bullshit">Transparency &amp; No-bullshit</h3>
+<p>One of the other major problems in the industry is that the
+technological products can be too much of a black box for
+non-technical people.</p>
+<p>There are of course some things only experts can understand.</p>
+<p>But if there is too much mystery, how can the project owner be
+sure that they aren&#39;t being exploited? Or won&#39;t be in the future?</p>
+<p>And even when these matters are discussed, it is easy for
+engineers to spit out technical mumbo-jumbo &amp; overwhelm with
+jargon when confronted about for example the time and budget
+requirements of a product / feature.</p>
+<p>This brings about the trust problem unless addressed properly.</p>
+<p>The answer is in transparency, communication and documentation.</p>
+<p>As the experts, we believe it is our job to make our clients &amp;
+partners understand the technical specifications of projects, the
+trade-offs involved, and the architectural &amp;
+implementation-related choices made, as much as possible, if they
+are interested.</p>
+<p>We want you to understand, so that you can appreciate and trust
+us.</p>
+<h3 id="quality-over-quantity">Quality over Quantity</h3>
+<p>We are very selective when it comes to the projects we work on,
+people we work with, partnerships we establish and tools &amp;
+ecosystems we build on top of. We stay away from scams and
+get-rich-quick schemes and try to focus on proper projects with a
+net positive impact on the society if possible, spearheaded by
+reputable people.</p>
+<p>We don&#39;t and won&#39;t have a lot of clients &amp; partners as we prefer
+to stay small. We focus on the quality of the work &amp; the guild
+members, and don&#39;t outsource. Which combined cause our bandwidth
+to stay quite low. We unfortunately find ourselves regularly
+having to reject good people &amp; projects. But this doesn&#39;t
+interfere with the fact that we always have time to meet with
+interesting people to discuss business opportunities.</p>
+<h3 id="tech-stack-philosophy">Tech Stack &amp; Philosophy</h3>
+<p>A project’s stack is always tailored according to its specific
+needs, but below are our default choices:</p>
+<ul>
+<li><p>Web app development
+   Language: Javascript
+   Framework: React</p>
+</li>
+<li><p>Mobile app development</p>
+<ul>
+<li>Language: Javascript</li>
+<li>Framework: React Native</li>
+</ul>
+</li>
+<li><p>Backend development</p>
+<ul>
+<li>Languages: Node.js, Go</li>
+<li>Databases: Postgres, Redis</li>
+</ul>
+</li>
+<li><p>Financial app development</p>
+<ul>
+<li>Languages: Python, Javascript, Go</li>
+</ul>
+</li>
+<li><p>System administration</p>
+<ul>
+<li>Operating Systems: Debian, Rocky Linux, Arch, OpenBSD</li>
+<li>Cloud Platforms: AWS, GCP, Heroku, DigitalOcean</li>
+</ul>
+</li>
+<li><p>Blockchain development</p>
+<ul>
+<li>Languages: Solidity, Go</li>
+<li>Platforms: Ethereum, Avalanche C, BSC, Cosmos</li>
+</ul>
+</li>
+</ul>
+<h4 id="philosophy">Philosophy</h4>
+<p>Our tech stack curation heuristics:</p>
+
+
+<pre><code>               Boring
+                 .
+               x .
+                 .
+Mainstream . . . . . . . Eccentric
+                 .
+                 .
+                 .
+               Hyped
+</code></pre>
+
+<p>Stick with the mainstream &amp; boring unless a competing alternative
+that is so much simpler and/or more powerful, and that has an
+acceptable learning curve, so that it will justify leaving the
+flock, exists.</p>
+<p>Stay away from tech that is overkill for current needs and always
+favor the simplest solution available that does the job.</p>
+<p>Favor solutions that the average developer can quickly understand,
+easily pick up and extend. Never bet on solutions with very steep
+learning curves no matter how elegant they may be. (Best example
+is advanced functional programming, which is the biggest and the
+most attractive trap in Javascript)</p>
+<p>See <a href="https://mcfunley.com/choose-boring-technology">boring technology</a> if unfamiliar with the term.</p>
+
+</main>
+</body>
+</html>
